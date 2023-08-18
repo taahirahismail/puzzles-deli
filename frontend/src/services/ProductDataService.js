@@ -5,10 +5,11 @@ class ProductDataService{
         return http.get("/products");
     }
 
+    //single
     fetchProduct(id){
         return http.get(`/product/${id}`);
     }
-
+    // double check route 
     addProduct(data){
         return http.post("/product", data);
     }

@@ -4,6 +4,7 @@
             <router-link to="/"><span><img src="https://i.postimg.cc/prJPL7t3/Screenshot-2023-08-17-123327.png" alt=""></span></router-link>
             <router-link id="links" to="/register">Register</router-link>
             <router-link id="links" to="/login">Log In</router-link>
+            <router-link id="links" to="/admin">Product Admin</router-link>
             <router-link id="links" to="/addproducts">Add Products</router-link>
             <router-link id="links" to="/products">Products</router-link>
             <router-link id="links" to="/">Home</router-link>
