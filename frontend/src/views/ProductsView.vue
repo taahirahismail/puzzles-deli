@@ -1,9 +1,9 @@
 <template>
-<div>
+<!-- <div>
     <router-link :to="{name: 'Create'}" class="button">Add new</router-link>
-</div>
+</div> -->
 
-<!-- <div v-if="products">
+<div v-if="products">
     <div v-for="product of products" :key="product.productID" :product="product">
         <div>
             {{product.productName}}
@@ -12,13 +12,13 @@
         </div>
     </div>
 </div>
-<div v-else>Loading Products</div> -->
+<div v-else>Loading Products</div>
 </template>
 
 <script>
 export default {
     computed: {
-        projects(){
+        products(){
             return this.$store.state.products;
         },
     },
