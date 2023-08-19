@@ -2,7 +2,7 @@ const {express, routes} = require('./controllers');
 const path = require('path');
 const app = express();
 const port = +process.env.PORT || 3000;
-
+const cookieParser = require('cookie-parser');
 const cors = require('cors');
 
 // static
@@ -11,6 +11,8 @@ app.use(
     express.urlencoded({
         extended: false
     }),
+    cookieParser(),
+    cors(),
     routes
 );
 app.use((req, res, next) => {
