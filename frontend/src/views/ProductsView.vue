@@ -1,13 +1,19 @@
 <template>
- <div v-if="products">
-    <ProductCard v-for="product of products" :key="product.productID" :product="product"/>
-</div>
-<div v-else>Loading Products</div> 
+    <div>
+        <div v-if="products">
+        <div v-for="product of products" :key="product.productID">
+            <div>
+            <h1>{{ product.productName }}</h1>
+            <p>{{ product.productDesc }}</p>
+            <p>{{ product.price }}</p>
+            </div>
+        </div>
+        </div>
+        <div v-else>Loading Products</div>
+    </div>
 </template>
 
 <script>
-
-import ProductCard from '@/components/ProductCard-Comp.vue'
 
 export default {
     computed: {

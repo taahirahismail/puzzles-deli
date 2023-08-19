@@ -5,7 +5,7 @@
             <router-link id="links" to="/register">Register</router-link>
             <router-link id="links" to="/login">Log In</router-link>
             <router-link id="links" to="/admin">Product Admin</router-link>
-            <router-link id="links" to="/addproducts">Add Products</router-link>
+            <router-link id="links" to="/product">Add Products</router-link>
             <router-link id="links" to="/products">Products</router-link>
             <router-link id="links" to="/">Home</router-link>
         </div>

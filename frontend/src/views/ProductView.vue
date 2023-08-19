@@ -15,13 +15,13 @@ export default {
     props: ["id"], 
     computed: {
         product(){
-            return this.$store.state.property; 
+            return this.$store.state.product; 
         },
     },
 
     mounted(){
-        this.$store.dispatch("getProduct", this.id); 
+        this.$store.dispatch("getProduct", this.id)
     }
-}; 
+}
 </script>
     
