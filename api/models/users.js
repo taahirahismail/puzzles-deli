@@ -129,6 +129,8 @@ class Users {
         const query = `DELETE FROM Users WHERE userID = ${req.params.id};`
 
         db.query(query, (err) => {
+            if (err) throw err
+            
             res.json({
                 status: res.statusCode,
                 message: "You'll be back. We'll wait."
